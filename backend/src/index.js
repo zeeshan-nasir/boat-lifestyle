@@ -50,4 +50,8 @@ app.get(
   }
 );
 
+//Product routes
+const productController = require("./controllers/product.controller");
+app.use("/products", productController);
+
 module.exports = app;

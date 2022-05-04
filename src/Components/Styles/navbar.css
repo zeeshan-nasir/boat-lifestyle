@@ -17,6 +17,11 @@
    background-color: black;
    color: white;
    padding: 0% 2%;
+   /* position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+   z-index: 100;
+   border: 1px solid; */
 }
 
 .navLogo {
@@ -54,11 +59,12 @@
    font-size: 1.1rem;
 }
 
-input:focus {
+.searchInput:focus {
    outline: none;
 }
 
-input::placeholder {
+.searchInput,
+.searchInput::placeholder {
    font-size: 1.1rem;
 }
 

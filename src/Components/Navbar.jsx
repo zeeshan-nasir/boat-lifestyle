@@ -54,6 +54,9 @@ const Navbar = () => {
                <p className="cartCount flex">0</p>
             </div>
          </div>
+
+         {/* Small screen navbar */}
+
          <div className="smallScreenSearch flex">
             <div className="smallScreenSearchBar flex">
                <AiOutlineSearch

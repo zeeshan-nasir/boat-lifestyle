@@ -1,0 +1,174 @@
+.footer {
+   width: 100%;
+   min-height: 524px;
+   background-color: black;
+   color: white;
+   box-sizing: border-box;
+}
+
+.firstFooterDiv {
+   justify-content: space-around;
+}
+
+.sendEmailBox {
+   flex: .4;
+   padding-left: 110px;
+   padding-right: 50px;
+   box-sizing: border-box;
+}
+
+.subscribeText {
+   font-size: .9rem;
+   width: 90%;
+   color: rgb(224, 224, 224);
+}
+
+.footerLogo {
+   width: 85px;
+}
+
+.footerInputDiv {
+   border: 1px solid rgb(37, 37, 37);
+   height: 50px;
+   width: 90%;
+   justify-content: space-between;
+   border-radius: 5px;
+   flex-wrap: wrap;
+}
+
+.footerInput {
+   background-color: transparent;
+   height: 60%;
+   width: 45%;
+   margin-left: 15px;
+   border: none;
+   color: white;
+}
+
+.footerInput,
+.footerInput::placeholder {
+   font-size: .8rem;
+}
+
+.footerInput:focus {
+   outline: none;
+}
+
+.footerBtn {
+   width: 40%;
+   height: 80%;
+   margin-right: 5px;
+   background-color: rgb(255, 0, 0);
+   border: rgb(255, 0, 0);
+   color: rgb(224, 224, 224);
+   font-weight: bold;
+}
+
+.mediaLinks {
+   height: 30px;
+   gap: 30px;
+   padding: 5px;
+   margin-top: 10px;
+   font-size: 1.2rem;
+}
+
+.footerLinks {
+   justify-content: space-around;
+   flex: .8;
+   padding-top: 20px;
+}
+
+.footerLinks>div {
+   font-size: .85rem;
+   color: rgb(180, 180, 180);
+}
+
+.linksHeader {
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+
+.midFooter {
+   justify-content: center;
+   padding: 30px 0px;
+   gap: 10%;
+}
+
+.download {
+   width: 250px;
+   margin-right: -40px;
+}
+
+.linksToStores {
+   gap: 3%;
+}
+
+
+
+.copyright {
+   text-align: center;
+   padding: 10px 0px;
+   font-size: .9rem;
+}
+
+@media only screen and (max-width: 1000px) {
+   .firstFooterDiv {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .sendEmailBox {
+      padding: 20px 0px 0px;
+      margin-left: 40px;
+   }
+
+   .footerLinks {
+      width: 420px;
+      margin-left: 60px;
+   }
+
+   .midFooter {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .paymentsImages {
+      margin-bottom: 30px;
+   }
+
+   .linksToStores {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   .download {
+      margin-left: 40px;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   .hideLinks {
+      display: none;
+   }
+
+   .footerLinks {
+      width: 90%;
+      margin-left: 0px;
+   }
+
+   .imageSize {
+      width: 90%;
+      margin-left: 20px;
+   }
+
+   .copyright {
+      width: 90%;
+      margin: auto;
+   }
+
+   .linksToStores {
+      width: 90%;
+      margin: auto;
+   }
+}

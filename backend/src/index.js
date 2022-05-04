@@ -17,7 +17,7 @@ app.post("/register", register);
 app.post("/login", login);
 
 //Google OAuth
-const passport = require("./configs/google-oauth");
+const passport = require("./configs/oauth");
 app.get(
   "/auth/google",
   passport.authenticate("google", { scope: ["profile", "email"] })
@@ -34,5 +34,24 @@ app.get(
     res.redirect("/users");
   }
 );
+
+//Facebook OAuth
+app.get("/auth/facebook", passport.authenticate("facebook"));
+
+app.get(
+  "/auth/facebook/callback",
+  passport.authenticate("facebook", {
+    failureRedirect: "/login",
+    session: false,
+  }),
+  function (req, res) {
+    // Successful authentication, redirect home.
+    res.redirect("/users");
+  }
+);
+
+//Product routes
+const productController = require("./controllers/product.controller");
+app.use("/products", productController);
 
 module.exports = app;

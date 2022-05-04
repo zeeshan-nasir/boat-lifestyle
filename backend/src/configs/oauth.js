@@ -7,6 +7,7 @@ const { v4: uuidv4 } = require("uuid");
 const User = require("../models/user.model");
 
 var GoogleStrategy = require("passport-google-oauth20").Strategy;
+var FacebookStrategy = require("passport-facebook").Strategy;
 
 passport.use(
   new GoogleStrategy(
@@ -31,6 +32,21 @@ passport.use(
 
       console.log(user);
       return cb(null, user);
+    }
+  )
+);
+
+passport.use(
+  new FacebookStrategy(
+    {
+      clientID: process.env.FACEBOOK_CLIENT_ID,
+      clientSecret: process.env.FACEBOOK_CLIENT_SECRET_KEY,
+      callbackURL: "http://localhost:5000/auth/facebook/callback",
+    },
+    function (accessToken, refreshToken, profile, cb) {
+      User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+        return cb(err, user);
+      });
     }
   )
 );

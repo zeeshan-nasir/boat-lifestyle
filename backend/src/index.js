@@ -17,7 +17,7 @@ app.post("/register", register);
 app.post("/login", login);
 
 //Google OAuth
-const passport = require("./configs/google-oauth");
+const passport = require("./configs/oauth");
 app.get(
   "/auth/google",
   passport.authenticate("google", { scope: ["profile", "email"] })
@@ -26,6 +26,21 @@ app.get(
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
+    failureRedirect: "/login",
+    session: false,
+  }),
+  function (req, res) {
+    // Successful authentication, redirect home.
+    res.redirect("/users");
+  }
+);
+
+//Facebook OAuth
+app.get("/auth/facebook", passport.authenticate("facebook"));
+
+app.get(
+  "/auth/facebook/callback",
+  passport.authenticate("facebook", {
     failureRedirect: "/login",
     session: false,
   }),

@@ -1,3 +1,38 @@
+# Backend Routes
+
+```
+http://localhost:5000/login   -  MANUAL LOGIN
+
+http://localhost:5000/register - MANUAL SIGNUP
+
+http://localhost:5000/auth/google     - GOOGLE OAUTH
+
+http://localhost:5000/auth/facebook    - FACEBOOK OAUTH  (some issues still)
+
+http://localhost:5000/products  - ALL PRODUCTS
+
+http://localhost:5000/products/smart_watches    - SMART WATCHES
+
+http://localhost:5000/products/wireless_earbuds  - WIRELESS EARBUDS
+
+http://localhost:5000/products/wireless_speakers    - WIRELESS SPEAKERS
+
+http://localhost:5000/products/home_theatre    - HOME THEATRE SYSTEMS
+
+http://localhost:5000/products/wired_earphones   - WIRED EARPHONES
+
+http://localhost:5000/products/mobile_accessories  - MOBILE ACCESSORIES
+
+http://localhost:5000/products/limited_edition   - LIMITED EDITION PRODUCTS
+
+http://localhost:5000/products/grooming        - SELF GROOMING PRODUCTS
+
+
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

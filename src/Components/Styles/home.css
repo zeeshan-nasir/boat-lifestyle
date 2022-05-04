@@ -1,0 +1,130 @@
+/* Carousel */
+
+.carousel-status {
+   display: none;
+}
+
+/* Top sellers */
+
+.topSellersDiv {
+   height: 650px;
+   background-color: rgb(20, 20, 20);
+   color: white;
+}
+
+.headingText {
+   margin: 0px;
+   font-size: 3rem;
+   padding: 30px;
+   text-align: center;
+}
+
+.textDiv {
+   width: 18%;
+   margin: auto;
+   justify-content: center;
+   gap: 20%;
+   font-size: 1.1rem;
+   margin-top: -15px;
+}
+
+.simple {
+   border-bottom: 2px solid rgb(36, 36, 36);
+   padding-bottom: 15px;
+   cursor: pointer;
+}
+
+.red {
+   border-bottom: 2px solid rgb(255, 0, 0);
+   padding-bottom: 15px;
+   cursor: pointer;
+   color: red;
+}
+
+.cardsDiv {
+   padding: 15px;
+   gap: 20px;
+   width: 85%;
+   margin: auto;
+}
+
+.card {
+   width: 100%;
+   height: 411px;
+   background-color: rgb(227, 227, 227);
+   color: black;
+   border-radius: 10px;
+   box-sizing: border-box;
+}
+
+.imageDiv {
+   text-align: center;
+}
+
+.imageDiv>img {
+   width: 80%;
+}
+
+.dataDiv {
+   background-color: white;
+   height: 150px;
+   margin: 4px 4px -12px;
+   border-radius: 10px;
+   padding: 8px;
+   box-sizing: border-box;
+   font-size: .7rem;
+}
+
+.priceDiv {
+   justify-content: space-between;
+   height: 40px;
+}
+
+.reviewsDiv {
+   margin: 0px;
+}
+
+.title {
+   font-size: 1rem;
+   font-weight: bold;
+   margin: 0px;
+}
+
+.price {
+   color: red;
+   font-weight: bold;
+   font-size: 1rem;
+   margin-right: 10px;
+}
+
+.strPrice {
+   color: rgb(167, 167, 167);
+   text-decoration: line-through;
+}
+
+.cardBtn {
+   width: 28%;
+   height: 30px;
+   background-color: red;
+   border: 1px solid red;
+   color: white;
+   border-radius: 5px;
+   font-weight: bold;
+   font-size: .9rem;
+   cursor: pointer;
+}
+
+.list {
+   list-style-type: none;
+   text-align: left;
+   margin: 5px 0px 0px -25px;
+   font-size: .8rem;
+}
+
+.list>li::before {
+   content: "•";
+   color: red;
+   display: inline-block;
+   width: 1em;
+   margin-left: -1em
+}

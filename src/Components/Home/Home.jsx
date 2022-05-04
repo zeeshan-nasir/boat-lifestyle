@@ -1,30 +1,13 @@
 import React from "react";
+import "../Styles/home.css";
+import { CarouselDiv } from "./Carousel";
+import TopSellers from "./TopSellers";
 
 const Home = () => {
    return (
       <div>
-         {/* <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1>
-         <h1>fdshfsdalkhfkdhsfalkhf</h1> */}
+         <CarouselDiv />
+         <TopSellers />
       </div>
    );
 };

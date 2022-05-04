@@ -17,11 +17,10 @@
    background-color: black;
    color: white;
    padding: 0% 2%;
-   /* position: -webkit-sticky;
+   position: -webkit-sticky;
    position: sticky;
    top: 0px;
    z-index: 100;
-   border: 1px solid; */
 }
 
 .navLogo {
@@ -36,10 +35,11 @@
    gap: 3%;
    flex: 1;
    justify-content: center;
+   cursor: pointer;
 }
 
 .navSearch {
-   gap: 10px;
+   gap: 15px;
    flex: 1;
    justify-content: flex-end;
    position: relative;
@@ -72,6 +72,10 @@
    padding-left: 10px;
 }
 
+.iconsDiv {
+   cursor: pointer;
+   gap: 10px;
+}
 
 .cartCount {
    height: 20px;

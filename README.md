@@ -1,31 +1,39 @@
 # Backend Routes
 
 ```
-http://localhost:5000/login   -  MANUAL LOGIN
+POST - http://localhost:5000/login   -  MANUAL LOGIN 
+    {
+      "email" : "",
+      "password : "",
+    }
 
-http://localhost:5000/register - MANUAL SIGNUP
+POST - http://localhost:5000/register - MANUAL SIGNUP
+     {
+      "email" : "",
+      "password : "",
+    }
 
-http://localhost:5000/auth/google     - GOOGLE OAUTH
+GET - http://localhost:5000/auth/google     - GOOGLE OAUTH
 
-http://localhost:5000/auth/facebook    - FACEBOOK OAUTH  (some issues still)
+GET - http://localhost:5000/auth/facebook    - FACEBOOK OAUTH  (some issues still)
 
-http://localhost:5000/products  - ALL PRODUCTS
+GET - http://localhost:5000/products  - ALL PRODUCTS
 
-http://localhost:5000/products/smart_watches    - SMART WATCHES
+GET - http://localhost:5000/products/smart_watches    - SMART WATCHES
 
-http://localhost:5000/products/wireless_earbuds  - WIRELESS EARBUDS
+GET - http://localhost:5000/products/wireless_earbuds  - WIRELESS EARBUDS
 
-http://localhost:5000/products/wireless_speakers    - WIRELESS SPEAKERS
+GET - http://localhost:5000/products/wireless_speakers    - WIRELESS SPEAKERS
 
-http://localhost:5000/products/home_theatre    - HOME THEATRE SYSTEMS
+GET - http://localhost:5000/products/home_theatre    - HOME THEATRE SYSTEMS
 
-http://localhost:5000/products/wired_earphones   - WIRED EARPHONES
+GET - http://localhost:5000/products/wired_earphones   - WIRED EARPHONES
 
-http://localhost:5000/products/mobile_accessories  - MOBILE ACCESSORIES
+GET - http://localhost:5000/products/mobile_accessories  - MOBILE ACCESSORIES
 
-http://localhost:5000/products/limited_edition   - LIMITED EDITION PRODUCTS
+GET - http://localhost:5000/products/limited_edition   - LIMITED EDITION PRODUCTS
 
-http://localhost:5000/products/grooming        - SELF GROOMING PRODUCTS
+GET - http://localhost:5000/products/grooming        - SELF GROOMING PRODUCTS
 
 
 ```

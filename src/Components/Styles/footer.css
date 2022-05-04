@@ -62,20 +62,25 @@
    border: rgb(255, 0, 0);
    color: rgb(224, 224, 224);
    font-weight: bold;
+   cursor: pointer;
 }
 
 .mediaLinks {
    height: 30px;
-   gap: 30px;
+   gap: 6%;
    padding: 5px;
    margin-top: 10px;
    font-size: 1.2rem;
+   width: 90%;
+   cursor: pointer;
+
 }
 
 .footerLinks {
    justify-content: space-around;
    flex: .8;
    padding-top: 20px;
+   cursor: pointer;
 }
 
 .footerLinks>div {
@@ -102,8 +107,6 @@
 .linksToStores {
    gap: 3%;
 }
-
-
 
 .copyright {
    text-align: center;

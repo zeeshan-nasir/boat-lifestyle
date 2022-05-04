@@ -15,8 +15,10 @@
 .headingText {
    margin: 0px;
    font-size: 3rem;
-   padding: 30px;
+   padding: 2%;
    text-align: center;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 .textDiv {
@@ -42,7 +44,6 @@
 }
 
 .cardsDiv {
-   /* padding: 15px; */
    gap: 20px;
    width: 85%;
    margin: auto;
@@ -117,7 +118,7 @@
    list-style-type: none;
    text-align: left;
    margin: 5px 0px 0px -25px;
-   font-size: .8rem;
+   font-size: .85rem;
 }
 
 .list>li::before {
@@ -140,6 +141,10 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
    }
+
+   .headingText {
+      font-size: 2rem;
+   }
 }
 
 /* New Launches Div */
@@ -148,7 +153,6 @@
    background-color: rgb(20, 20, 20);
    color: white;
    padding: 0px 0px 30px;
-
 }
 
 .newLaunchesDiv {
@@ -159,18 +163,202 @@
 
 .newLaunchesMiddle {
    width: 80%;
-   border: 1px solid;
    height: 520px;
+   border-radius: 30px;
 }
 
 .arrowSize {
    width: 35px;
+   cursor: pointer;
+}
+
+.launchesImgDiv {
+   height: 100%;
+   flex: 1;
+   border-radius: 30px;
 }
 
 .launchesImg {
-   width: 570px;
-   height: 520px;
+   width: 100%;
+   height: 100%;
    object-fit: cover;
+   border-radius: 30px 0px 0px 30px;
 }
 
-/* .launchesDataDiv {} */
+.launchesDataDiv {
+   flex: 1;
+   background-color: white;
+   height: 100%;
+   color: black;
+   text-align: center;
+   border-radius: 0px 30px 30px 0px;
+}
+
+.descriptionDiv {
+   justify-content: center;
+   gap: 30px;
+}
+
+.text1 {
+   color: rgb(158, 158, 158);
+   font-weight: bold;
+   margin-bottom: -10px;
+}
+
+.titleText {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.text3 {
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   background-color: rgb(255, 0, 0);
+   width: 25%;
+   margin: auto;
+   padding: 3px;
+   margin-bottom: -10px;
+}
+
+.rupeeText {
+   color: red;
+   font-size: 1.7rem;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.text5 {
+   background-color: rgb(111, 111, 111);
+   color: white;
+   padding: 2px 15px;
+}
+
+.para {
+   max-height: 60px;
+   overflow: hidden;
+}
+
+.textPara {
+   width: 80%;
+   margin: auto;
+   text-align: justify;
+   text-justify: inter-word;
+   max-height: 100px;
+   font-size: .95rem;
+}
+
+.redText {
+   color: red;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.launchesBtnDiv {
+   justify-content: center;
+   gap: 15px;
+}
+
+.exploreBtn {
+   width: 25%;
+   height: 50px;
+   border-radius: 5px;
+   border: 1px solid red;
+   color: red;
+   font-weight: bold;
+   background-color: white;
+   cursor: pointer;
+}
+
+.addToCartBtn {
+   width: 25%;
+   height: 50px;
+   border-radius: 5px;
+   border: none;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+
+.colors {
+   width: 30%;
+   margin: auto;
+   margin-top: 35px;
+   margin-bottom: 35px;
+   height: 40px;
+   justify-content: center;
+   gap: 20px;
+}
+
+.color1,
+.color2,
+.color3 {
+   border-radius: 50%;
+   min-width: 25px;
+   min-height: 25px;
+}
+
+.colorRing {
+   border: 2px solid rgb(255, 0, 0);
+   border-radius: 50%;
+   padding: 3px;
+}
+
+.color1 {
+   background-color: black;
+}
+
+.color2 {
+   background-color: rgb(202, 201, 200);
+}
+
+.color3 {
+   background-color: rgb(64, 135, 193);
+}
+
+@media only screen and (max-width: 950px) {
+   .newLaunchesMiddle {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid;
+      min-height: 1200px;
+   }
+
+   .launchesImgDiv {
+      width: 100%;
+      height: 50%;
+      border-radius: 30px;
+   }
+
+   .launchesImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px 30px 0px 0px;
+   }
+
+   .launchesDataDiv {
+      background-color: white;
+      height: 100%;
+      color: black;
+      text-align: center;
+      border-radius: 0px 0px 30px 30px;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   .arrowSize {
+      display: none;
+   }
+
+   .addToCartBtn,
+   .exploreBtn {
+      font-size: .75rem;
+   }
+
+   /* .launchesBtnDiv{
+      display: flex;
+      flex-direction: column;
+   } */
+}

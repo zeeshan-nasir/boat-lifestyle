@@ -19,33 +19,35 @@ const NewLaunches = () => {
                      src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/new-launch-500-anc.jpg?v=1650021089"
                      alt=""
                   />
-                  <div className="launchesDataDiv">
-                     <p>Wireless Earbuds</p>
-                     <p>Airdopes 500 ANC</p>
-                     <p>Special launch price</p>
-                     <p>Rs. 3999</p>
-                     <div>
-                        <p>Description</p>
-                        <p>Features</p>
-                     </div>
-                     <p>
+               </div>
+               <div className="launchesDataDiv">
+                  <p className="text1">Wireless Earbuds</p>
+                  <p className="titleText">Airdopes 500 ANC</p>
+                  <p className="text3">Special launch price</p>
+                  <p className="rupeeText">Rs. 3999</p>
+                  <div className="flex descriptionDiv">
+                     <p className="text5">DESCRIPTION</p>
+                     <p className="text6">FEATURES</p>
+                  </div>
+                  <div className="para">
+                     <p className="textPara">
                         Focus on what matters with Airdopes 500 ANC that helps
                         you tap out of chaos. Block unwanted background noise up
                         to 35dB with its Hybrid Active Noise Cancellation. Make
-                        your calls crystal clear with the power of Quad Mics and
-                        ENx™ Technology. With a promising 28 HRS of playback, it
-                        is time to listen to the #SoundThatMatters with Airdopes
-                        500 ANC.
+                        your calls crystal clear with the power{" "}
+                        <span className="redText">...Read More</span>
                      </p>
-                     <div className="colors">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                  </div>
+                  <div className="colors flex">
+                     <div className="colorRing">
+                        <div className="color1"></div>
                      </div>
-                     <div className="launchesBtnDiv">
-                        <button className="exploreBtn">EXPLORE NOW</button>
-                        <button className="addToCartBtn">ADD TO CART</button>
-                     </div>
+                     <div className="color2"></div>
+                     <div className="color3"></div>
+                  </div>
+                  <div className="launchesBtnDiv flex">
+                     <button className="exploreBtn">EXPLORE NOW</button>
+                     <button className="addToCartBtn">ADD TO CART</button>
                   </div>
                </div>
             </div>

@@ -7,9 +7,9 @@
 /* Top sellers */
 
 .topSellersDiv {
-   height: 650px;
    background-color: rgb(20, 20, 20);
    color: white;
+   padding-bottom: 20px;
 }
 
 .headingText {
@@ -42,7 +42,7 @@
 }
 
 .cardsDiv {
-   padding: 15px;
+   /* padding: 15px; */
    gap: 20px;
    width: 85%;
    margin: auto;
@@ -50,12 +50,10 @@
 
 .card {
    width: 100%;
-   min-height: 411px;
    background-color: rgb(227, 227, 227);
    color: black;
    border-radius: 10px;
-   box-sizing: border-box;
-   flex-wrap: wrap;
+   padding-bottom: 4px;
 }
 
 .imageDiv {
@@ -69,7 +67,7 @@
 .dataDiv {
    background-color: white;
    min-height: 150px;
-   margin: 4px 4px -12px;
+   margin: 0px 3px;
    border-radius: 10px;
    padding: 8px;
    box-sizing: border-box;
@@ -104,7 +102,7 @@
 }
 
 .cardBtn {
-   width: 28%;
+   width: 34%;
    height: 30px;
    background-color: red;
    border: 1px solid red;
@@ -129,3 +127,50 @@
    width: 1em;
    margin-left: -1em
 }
+
+@media only screen and (max-width: 1000px) {
+   .cardsDiv {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media only screen and (max-width: 720px) {
+   .cardsDiv {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+}
+
+/* New Launches Div */
+
+.newLaunches {
+   background-color: rgb(20, 20, 20);
+   color: white;
+   padding: 0px 0px 30px;
+
+}
+
+.newLaunchesDiv {
+   justify-content: center;
+   gap: 40px;
+   margin-top: 20px;
+}
+
+.newLaunchesMiddle {
+   width: 80%;
+   border: 1px solid;
+   height: 520px;
+}
+
+.arrowSize {
+   width: 35px;
+}
+
+.launchesImg {
+   width: 570px;
+   height: 520px;
+   object-fit: cover;
+}
+
+/* .launchesDataDiv {} */

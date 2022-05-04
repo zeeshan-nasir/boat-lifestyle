@@ -12,7 +12,7 @@ export const CarouselDiv = () => {
       >
          <div>
             <img
-               src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Watch_xtend_wbann_1_2000x.jpg?v=1651490614"
+               src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Sail_with_boAt_WEB_2000x.jpg?v=1651669770"
                alt=""
             />
          </div>

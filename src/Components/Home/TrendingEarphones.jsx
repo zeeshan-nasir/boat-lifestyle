@@ -40,7 +40,7 @@ const TrendingEarphones = () => {
                      <AiFillStar />
                      4.73 (114 reviews)
                   </p>
-                  <p className="title">BOAT Airdopes 441 Pro - Bluetooth</p>
+                  <p className="title">BOAT Airdopes 441 Pro</p>
                   <div className="priceDiv flex">
                      <div className="flex">
                         <p className="price">₹ 2,299</p>
@@ -67,7 +67,7 @@ const TrendingEarphones = () => {
                      <AiFillStar />
                      4.76 (386 reviews)
                   </p>
-                  <p className="title">boAt Airdopes 402 - Wireless Earbuds</p>
+                  <p className="title">boAt Airdopes 402 - Wireless</p>
                   <div className="priceDiv flex">
                      <div className="flex">
                         <p className="price">₹ 1,599</p>

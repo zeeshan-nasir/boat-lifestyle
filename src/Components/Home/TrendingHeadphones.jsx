@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const TrendingEarphones = () => {
+const TrendingHeadphones = () => {
    const [useClass, setUseClass] = useState("first");
 
    return (
       <div className="topSellersDiv">
-         <h1 className="headingText">Trending Earphones</h1>
+         <h1 className="headingText">Trending Headphones</h1>
          <div className="textDiv flex">
             <p
                onClick={() => setUseClass("first")}
                className={useClass === "first" ? "red" : "simple"}
             >
-               Earbuds
+               Wireless
             </p>
             <p
                onClick={() => setUseClass("second")}
                className={useClass === "second" ? "red" : "simple"}
             >
-               Wireless
+               ANC
             </p>
             <p
                onClick={() => setUseClass("third")}
@@ -31,7 +31,7 @@ const TrendingEarphones = () => {
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/218997d1-3fe9-4a19-809c-94a8a2d05273_500x.png?v=1625045659"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/1be19528-6d06-4cab-8815-02618b93d3c9_400x.png?v=1625045854"
                      alt=""
                   />
                </div>
@@ -40,34 +40,34 @@ const TrendingEarphones = () => {
                      <AiFillStar />
                      4.73 (114 reviews)
                   </p>
-                  <p className="title">BOAT Airdopes 441 Pro</p>
+                  <p className="title">boAt Rockerz 255 Pro</p>
                   <div className="priceDiv flex">
                      <div className="flex">
-                        <p className="price">₹ 2,299</p>
-                        <p className="strPrice">₹ 5,999</p>
+                        <p className="price">₹ 999</p>
+                        <p className="strPrice">₹ 3,499</p>
                      </div>
                      <button className="cardBtn">ADD +</button>
                   </div>
                   <ul className="list">
-                     <li>Thumping bass & immersive sound</li>
-                     <li>Playback of 5H with each charge</li>
-                     <li>Ace your workouts with IPX5 rating</li>
+                     <li>Charges within an hour</li>
+                     <li>Sporty with water resistant</li>
+                     <li>CVC Noise cancelation</li>
                   </ul>
                </div>
             </div>
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/402-main-img_400x.png?v=1630059242"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0cfa4417-0213-4b49-b78e-0ae68aeb7057_400x.png?v=1625046144"
                      alt=""
                   />
                </div>
                <div className="dataDiv">
                   <p className="reviewsDiv">
                      <AiFillStar />
-                     4.76 (386 reviews)
+                     4.87 (206 reviews)
                   </p>
-                  <p className="title">boAt Airdopes 402 - Wireless</p>
+                  <p className="title">boAt Rockerz 550</p>
                   <div className="priceDiv flex">
                      <div className="flex">
                         <p className="price">₹ 1,599</p>
@@ -76,43 +76,43 @@ const TrendingEarphones = () => {
                      <button className="cardBtn">ADD +</button>
                   </div>
                   <ul className="list">
-                     <li>Ergonomic design</li>
-                     <li>Uninterrupted music for 4 hours</li>
-                     <li>Pocket-friendly charging case</li>
+                     <li>Playback of up to 20 hours</li>
+                     <li>Designed for music lovers</li>
+                     <li>Blocks out ambient sounds</li>
                   </ul>
                </div>
             </div>
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_6e1b5a7a-8f56-48c6-819d-24395393db81_400x.png?v=1624430639"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ed46e58c-9643-43e0-b350-9539d293aa51_400x.png?v=1625045114"
                      alt=""
                   />
                </div>
                <div className="dataDiv">
                   <p className="reviewsDiv">
                      <AiFillStar />
-                     4.83 (6 reviews)
+                     4.8 (844 reviews)
                   </p>
-                  <p className="title">BOAT Airdopes 281 Pro</p>
+                  <p className="title">boAt Rockerz 235 V2</p>
                   <div className="priceDiv flex">
                      <div className="flex">
-                        <p className="price">₹ 2,499</p>
-                        <p className="strPrice">₹ 6,990</p>
+                        <p className="price">₹ 869</p>
+                        <p className="strPrice">₹ 2,990</p>
                      </div>
                      <button className="cardBtn">ADD +</button>
                   </div>
                   <ul className="list">
-                     <li>Colour variants for every style</li>
-                     <li>Fast Charge in just 15 minutes</li>
-                     <li>Ace your workouts with IPX5 rating</li>
+                     <li>8H non-stop music</li>
+                     <li>Sweat and water resistant</li>
+                     <li>4Hrs charge in 20minutes</li>
                   </ul>
                </div>
             </div>
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img_AD621_1_400x.png?v=1616230788"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255-pro-red_bd675504-5750-4b42-97b9-79caf2cc9034_400x.png?v=1614587254"
                      alt=""
                   />
                </div>
@@ -120,7 +120,7 @@ const TrendingEarphones = () => {
                   <p className="reviewsDiv">
                      <AiFillStar />5 (2 reviews)
                   </p>
-                  <p className="title">BOAT Airdopes 621</p>
+                  <p className="title">TRebel Rockerz 255 Pro</p>
                   <div className="priceDiv flex">
                      <div className="flex">
                         <p className="price">₹ 2,499</p>
@@ -140,4 +140,4 @@ const TrendingEarphones = () => {
    );
 };
 
-export default TrendingEarphones;
+export default TrendingHeadphones;

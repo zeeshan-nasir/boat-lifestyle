@@ -1,37 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const TrendingEarphones = () => {
-   const [useClass, setUseClass] = useState("first");
-
+const Gaming = () => {
    return (
       <div className="topSellersDiv">
-         <h1 className="headingText">Trending Earphones</h1>
-         <div className="textDiv flex">
-            <p
-               onClick={() => setUseClass("first")}
-               className={useClass === "first" ? "red" : "simple"}
-            >
-               Earbuds
-            </p>
-            <p
-               onClick={() => setUseClass("second")}
-               className={useClass === "second" ? "red" : "simple"}
-            >
-               Wireless
-            </p>
-            <p
-               onClick={() => setUseClass("third")}
-               className={useClass === "third" ? "red" : "simple"}
-            >
-               Wired
-            </p>
-         </div>
+         <h1 className="headingText">Gaming</h1>
+
          <div className="cardsDiv flex">
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/218997d1-3fe9-4a19-809c-94a8a2d05273_500x.png?v=1625045659"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_33ed4e4f-8ef4-4c8a-a0c7-68216dfafa4a_400x.png?v=1643477993"
                      alt=""
                   />
                </div>
@@ -43,8 +22,8 @@ const TrendingEarphones = () => {
                   <p className="title">BOAT Airdopes 441 Pro</p>
                   <div className="priceDiv flex">
                      <div className="flex">
-                        <p className="price">₹ 2,299</p>
-                        <p className="strPrice">₹ 5,999</p>
+                        <p className="price">₹ 2,499</p>
+                        <p className="strPrice">₹ 6,990</p>
                      </div>
                      <button className="cardBtn">ADD +</button>
                   </div>
@@ -58,19 +37,19 @@ const TrendingEarphones = () => {
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/402-main-img_400x.png?v=1630059242"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_2_400x.png?v=1632715015"
                      alt=""
                   />
                </div>
                <div className="dataDiv">
                   <p className="reviewsDiv">
                      <AiFillStar />
-                     4.76 (386 reviews)
+                     4.5 (2 reviews)
                   </p>
-                  <p className="title">boAt Airdopes 402 - Wireless</p>
+                  <p className="title">boAt Immortal 1300</p>
                   <div className="priceDiv flex">
                      <div className="flex">
-                        <p className="price">₹ 1,599</p>
+                        <p className="price">₹ 3,499</p>
                         <p className="strPrice">₹ 5,990</p>
                      </div>
                      <button className="cardBtn">ADD +</button>
@@ -85,7 +64,7 @@ const TrendingEarphones = () => {
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_6e1b5a7a-8f56-48c6-819d-24395393db81_400x.png?v=1624430639"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2_f3aa2756-01f3-4e39-80bc-7b4f6551c7aa_400x.png?v=1625748159"
                      alt=""
                   />
                </div>
@@ -94,7 +73,7 @@ const TrendingEarphones = () => {
                      <AiFillStar />
                      4.83 (6 reviews)
                   </p>
-                  <p className="title">BOAT Airdopes 281 Pro</p>
+                  <p className="title">boAt Immortal 1000D</p>
                   <div className="priceDiv flex">
                      <div className="flex">
                         <p className="price">₹ 2,499</p>
@@ -112,7 +91,7 @@ const TrendingEarphones = () => {
             <div className="card">
                <div className="imageDiv">
                   <img
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main-img_AD621_1_400x.png?v=1616230788"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2-700_400x.png?v=1643632679"
                      alt=""
                   />
                </div>
@@ -120,11 +99,11 @@ const TrendingEarphones = () => {
                   <p className="reviewsDiv">
                      <AiFillStar />5 (2 reviews)
                   </p>
-                  <p className="title">BOAT Airdopes 621</p>
+                  <p className="title">boAt Immortal 400</p>
                   <div className="priceDiv flex">
                      <div className="flex">
-                        <p className="price">₹ 2,499</p>
-                        <p className="strPrice">₹ 7,990</p>
+                        <p className="price">₹ 1,999</p>
+                        <p className="strPrice">₹ 6,990</p>
                      </div>
                      <button className="cardBtn">ADD +</button>
                   </div>
@@ -140,4 +119,4 @@ const TrendingEarphones = () => {
    );
 };
 
-export default TrendingEarphones;
+export default Gaming;

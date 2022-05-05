@@ -13,10 +13,6 @@ import LoginPopup from "./LoginPopup";
 const Navbar = () => {
    const [login, setLogin] = useState(false);
 
-   const handlePopup = () => {
-      setLogin(login === true ? false : true);
-   };
-
    return (
       <div className="navbar">
          <div className="preNavbar">
@@ -59,8 +55,10 @@ const Navbar = () => {
                   />
                </div>
                <div className="iconsDiv flex">
-                  <CgProfile onClick={handlePopup} size={25} />
-                  {login ? <LoginPopup handlePopup={handlePopup} /> : null}
+                  <CgProfile onClick={() => setLogin(!login)} size={25} />
+                  {login ? (
+                     <LoginPopup setLogin={setLogin} login={login} />
+                  ) : null}
                   <AiFillGift size={25} />
                   <AiOutlineShoppingCart className="cartIcon" size={25} />
                   <p className="cartCount flex">0</p>

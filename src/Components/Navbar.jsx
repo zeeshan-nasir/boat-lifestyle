@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import {
    AiOutlineSearch,
@@ -8,8 +8,15 @@ import {
 import { CgProfile } from "react-icons/cg";
 import "./Styles/navbar.css";
 import { Link } from "react-router-dom";
+import LoginPopup from "./LoginPopup";
 
 const Navbar = () => {
+   const [login, setLogin] = useState(false);
+
+   const handlePopup = () => {
+      setLogin(login === true ? false : true);
+   };
+
    return (
       <div className="navbar">
          <div className="preNavbar">
@@ -52,7 +59,8 @@ const Navbar = () => {
                   />
                </div>
                <div className="iconsDiv flex">
-                  <CgProfile size={25} />
+                  <CgProfile onClick={handlePopup} size={25} />
+                  {login ? <LoginPopup handlePopup={handlePopup} /> : null}
                   <AiFillGift size={25} />
                   <AiOutlineShoppingCart className="cartIcon" size={25} />
                   <p className="cartCount flex">0</p>

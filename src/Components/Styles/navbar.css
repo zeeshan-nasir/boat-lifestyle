@@ -10,6 +10,7 @@
 
 .preNavText {
    margin: 0px;
+   font-weight: bold;
 }
 
 .mainNavbar {
@@ -141,4 +142,40 @@
    .smallScreenSearch {
       display: none;
    }
+}
+
+/* Login popup */
+
+.loginPopup {
+   height: 70px;
+   width: 210px;
+   position: absolute;
+   border-radius: 6px;
+   right: 5px;
+   top: 55px;
+   background-color: black;
+   padding: 10px;
+}
+
+.popupUpperDiv {
+   justify-content: space-between;
+   margin-bottom: 13px;
+}
+
+.popupText {
+   margin: 0px;
+   color: red;
+   font-size: 1.1rem;
+}
+
+.popUpBtn {
+   width: 100%;
+   margin: auto;
+   height: 35px;
+   background-color: red;
+   font-size: 1rem;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   border: none;
 }

@@ -3,6 +3,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import {  useState } from "react";
 import React from "react";
 const Container = styled.div`
+margin-top : 110px;
     height: 525px;
     background-color: #141414;
     padding-bottom: 60px;
@@ -51,6 +52,7 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
+    
     .socials {
         display: flex;
         justify-content : center;

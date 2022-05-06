@@ -1,5 +1,10 @@
 /* Carousel */
 
+.carousel {
+   box-sizing: border-box;
+   margin-top: 110px;
+}
+
 .carousel-status {
    display: none;
 }
@@ -326,7 +331,7 @@
       display: flex;
       flex-direction: column;
       border: 1px solid;
-      min-height: 1200px;
+      min-height: 1050px;
    }
 
    .launchesImgDiv {

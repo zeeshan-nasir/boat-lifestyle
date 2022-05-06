@@ -6,6 +6,10 @@
    text-align: center;
    line-height: 40px;
    color: white;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: 100;
 }
 
 .preNavText {
@@ -14,13 +18,15 @@
 }
 
 .mainNavbar {
+   box-sizing: border-box;
    height: 70px;
    background-color: black;
    color: white;
    padding: 0% 2%;
    position: -webkit-sticky;
-   position: sticky;
-   top: 0px;
+   position: fixed;
+   width: 100%;
+   top: 40px;
    z-index: 100;
 }
 
@@ -120,11 +126,19 @@
 
    .smallScreenSearch {
       display: flex;
+      position: fixed;
+      top: 110px;
+      z-index: 100;
+      width: 100%;
    }
 
    .cartCount {
       position: absolute;
       top: -18px;
+   }
+
+   .carousel{
+      margin-top: 180px;
    }
 }
 
@@ -135,6 +149,25 @@
 
    .cartCount {
       right: -5px;
+   }
+
+   .smallScreenSearch {
+      display: flex;
+      position: fixed;
+      top: 70px;
+      z-index: 100;
+      width: 100%;
+   }
+
+   .mainNavbar {
+      position: fixed;
+      top: 0px;
+      z-index: 100;
+      width: 100%;
+   }
+
+   .carousel{
+      margin-top: 140px;
    }
 }
 

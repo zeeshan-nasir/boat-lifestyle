@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const CarouselDiv = () => {
    return (
-      <Carousel
+      <Carousel className="carousel"
          autoPlay="true"
          infiniteLoop="true"
          interval="3000"

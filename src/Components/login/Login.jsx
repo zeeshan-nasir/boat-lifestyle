@@ -52,7 +52,7 @@ margin-top : 110px;
 `;
 
 const Form = styled.form`
-    
+     
     .socials {
         display: flex;
         justify-content : center;
@@ -183,6 +183,7 @@ const Form = styled.form`
 `;
 
 const Forgot = styled.div`
+ margin-top : 110px;
     background-color:  #141414 ;
     padding-top: 70px;
     padding-bottom: 150px;

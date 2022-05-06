@@ -10,6 +10,7 @@ import Payments from "./Components/Payments/Payments";
 import Otp from "./Components/Payments/Otp";
 import { Login } from "./Components/login/Login";
 import { Register } from "./Components/login/Register";
+import { ProductDetails } from "./Components/Productdescription/productdetails";
 
 function App() {
    return (

@@ -6,21 +6,28 @@
    text-align: center;
    line-height: 40px;
    color: white;
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: 10;
 }
 
 .preNavText {
    margin: 0px;
+   font-weight: bold;
 }
 
 .mainNavbar {
+   box-sizing: border-box;
    height: 70px;
    background-color: black;
    color: white;
    padding: 0% 2%;
    position: -webkit-sticky;
-   position: sticky;
-   top: 0px;
-   z-index: 100;
+   position: fixed;
+   width: 100%;
+   top: 40px;
+   z-index: 10;
 }
 
 .navLogo {
@@ -36,6 +43,27 @@
    flex: 1;
    justify-content: center;
    cursor: pointer;
+}
+
+.bottomAnimation {
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-size: 1.1rem;
+}
+
+.bottomAnimation::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 1px;
+   background: rgb(255, 255, 255);
+   transition: width .3s;
+}
+
+.bottomAnimation:hover::after {
+   width: 130%;
+   transition: width .3s;
 }
 
 .navSearch {
@@ -119,11 +147,19 @@
 
    .smallScreenSearch {
       display: flex;
+      position: fixed;
+      top: 110px;
+      z-index: 1;
+      width: 100%;
    }
 
    .cartCount {
       position: absolute;
       top: -18px;
+   }
+
+   .carousel {
+      margin-top: 180px;
    }
 }
 
@@ -135,10 +171,119 @@
    .cartCount {
       right: -5px;
    }
+
+   .smallScreenSearch {
+      display: flex;
+      position: fixed;
+      top: 70px;
+      z-index: 1;
+      width: 100%;
+   }
+
+   .mainNavbar {
+      position: fixed;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+   }
+
+   .carousel {
+      margin-top: 140px;
+   }
 }
 
 @media only screen and (min-width: 750px) {
    .smallScreenSearch {
       display: none;
    }
+}
+
+/* Login popup */
+
+.loginPopup {
+   height: 70px;
+   width: 210px;
+   position: absolute;
+   border-radius: 6px;
+   right: -20px;
+   top: 55px;
+   background-color: black;
+   padding: 10px;
+}
+
+.popupUpperDiv {
+   justify-content: space-between;
+   margin-bottom: 13px;
+}
+
+.popupText {
+   margin: 0px;
+   color: red;
+   font-size: 1.1rem;
+}
+
+.popUpBtn {
+   width: 100%;
+   margin: auto;
+   height: 35px;
+   background-color: red;
+   font-size: 1rem;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   border: none;
+}
+
+/* More popup */
+
+.morePopup {
+   width: 250px;
+   height: 280px;
+   border: 1px solid rgb(24, 24, 24);
+   position: absolute;
+   top: 70px;
+   background-color: black;
+   font-size: 1rem;
+   padding: 0px 20px;
+   box-sizing: border-box;
+}
+
+.morePopup>p:hover {
+   color: red;
+   transition: .3s;
+}
+
+/* Show popup */
+
+.showPopup {
+   display: grid;
+   width: 100%;
+   height: 500px;
+   background-color: black;
+   border: 1px solid rgb(24, 24, 24);
+   position: absolute;
+   box-sizing: border-box;
+   left: 0px;
+   top: 70px;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+   padding: 40px;
+}
+
+.showPopup>img {
+   width: 350px;
+}
+
+.showPopup>img:hover {
+   opacity: .7;
+   transition: .3s;
+}
+
+.firstLinkedImg:hover {
+   opacity: .7;
+   transition: .3s;
+}
+
+.firstLinkedImg {
+   width: 350px;
 }

@@ -16,13 +16,13 @@ const NewLaunches = () => {
                <div className="launchesImgDiv">
                   <img
                      className="launchesImg"
-                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/new-launch-500-anc.jpg?v=1650021089"
+                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_684x615_Black.jpg?v=1651651602"
                      alt=""
                   />
                </div>
                <div className="launchesDataDiv">
-                  <p className="text1">Wireless Earbuds</p>
-                  <p className="titleText">Airdopes 500 ANC</p>
+                  <p className="text1">Bluetooth Speaker</p>
+                  <p className="titleText">boAt Stone 1450</p>
                   <p className="text3">Special launch price</p>
                   <p className="rupeeText">Rs. 3999</p>
                   <div className="flex descriptionDiv">

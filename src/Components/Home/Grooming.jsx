@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const TrendingEarphones = ({ handleDispatch }) => {
-   const [useClass, setUseClass] = useState("first");
+const Grooming = ({ handleDispatch }) => {
    const [data, setData] = useState([]);
 
    const getData = async () => {
       let fetched = await fetch(
-         "http://localhost:5000/products/wireless_earbuds"
+         "http://localhost:5000/products/grooming"
       );
       fetched = await fetched.json();
       setData(fetched.products.slice(0, 4));
@@ -19,27 +18,8 @@ const TrendingEarphones = ({ handleDispatch }) => {
 
    return (
       <div className="topSellersDiv">
-         <h1 className="headingText">Trending Earphones</h1>
-         <div className="textDiv flex">
-            <p
-               onClick={() => setUseClass("first")}
-               className={useClass === "first" ? "red" : "simple"}
-            >
-               Earbuds
-            </p>
-            <p
-               onClick={() => setUseClass("second")}
-               className={useClass === "second" ? "red" : "simple"}
-            >
-               Wireless
-            </p>
-            <p
-               onClick={() => setUseClass("third")}
-               className={useClass === "third" ? "red" : "simple"}
-            >
-               Wired
-            </p>
-         </div>
+         <h1 className="headingText">Grooming</h1>
+
          <div className="cardsDiv flex">
             {data.map((e) => {
                return (
@@ -79,4 +59,4 @@ const TrendingEarphones = ({ handleDispatch }) => {
    );
 };
 
-export default TrendingEarphones;
+export default Grooming;

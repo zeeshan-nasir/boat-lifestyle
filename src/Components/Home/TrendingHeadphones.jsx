@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const TrendingEarphones = ({ handleDispatch }) => {
+const TrendingHeadphones = ({ handleDispatch }) => {
    const [useClass, setUseClass] = useState("first");
    const [data, setData] = useState([]);
 
    const getData = async () => {
       let fetched = await fetch(
-         "http://localhost:5000/products/wireless_earbuds"
+         "http://localhost:5000/products/wired_earphones"
       );
       fetched = await fetched.json();
       setData(fetched.products.slice(0, 4));
@@ -19,19 +19,19 @@ const TrendingEarphones = ({ handleDispatch }) => {
 
    return (
       <div className="topSellersDiv">
-         <h1 className="headingText">Trending Earphones</h1>
+         <h1 className="headingText">Trending Headphones</h1>
          <div className="textDiv flex">
             <p
                onClick={() => setUseClass("first")}
                className={useClass === "first" ? "red" : "simple"}
             >
-               Earbuds
+               Wireless
             </p>
             <p
                onClick={() => setUseClass("second")}
                className={useClass === "second" ? "red" : "simple"}
             >
-               Wireless
+               ANC
             </p>
             <p
                onClick={() => setUseClass("third")}
@@ -79,4 +79,4 @@ const TrendingEarphones = ({ handleDispatch }) => {
    );
 };
 
-export default TrendingEarphones;
+export default TrendingHeadphones;

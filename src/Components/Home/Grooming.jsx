@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const Gaming = () => {
+const Grooming = ({ handleDispatch }) => {
    const [data, setData] = useState([]);
 
    const getData = async () => {
       let fetched = await fetch(
-         "http://localhost:5000/products/limited_edition"
+         "http://localhost:5000/products/grooming"
       );
       fetched = await fetched.json();
       setData(fetched.products.slice(0, 4));
@@ -18,7 +18,7 @@ const Gaming = () => {
 
    return (
       <div className="topSellersDiv">
-         <h1 className="headingText">Gaming</h1>
+         <h1 className="headingText">Grooming</h1>
 
          <div className="cardsDiv flex">
             {data.map((e) => {
@@ -38,7 +38,12 @@ const Gaming = () => {
                               <p className="price">₹ {e.price}</p>
                               <p className="strPrice">₹ {e.strikedPrice}</p>
                            </div>
-                           <button className="cardBtn">ADD +</button>
+                           <button
+                              onClick={() => handleDispatch(e)}
+                              className="cardBtn"
+                           >
+                              ADD +
+                           </button>
                         </div>
                         <ul className="list">
                            <li>Colour variants for every style</li>
@@ -54,4 +59,4 @@ const Gaming = () => {
    );
 };
 
-export default Gaming;
+export default Grooming;

@@ -1,7 +1,12 @@
 import React from "react";
 import { ImCross } from "react-icons/im";
+import { useSelector } from "react-redux";
+import { FiTrash2 } from "react-icons/fi";
+import "./Styles/cart.css";
 
 const CartPopup = ({ cart, setCart }) => {
+   const cartItems = useSelector((store) => store.data);
+
    return (
       <div className="cart">
          <div className="cartHeader flex">
@@ -10,12 +15,40 @@ const CartPopup = ({ cart, setCart }) => {
          </div>
          <div className="cartNav">
             <p className="cartText">
-               Free Shipping sitewide | <span className="cartTextBold">Cash On Delivery</span> available
-               for order:  value upto <span className="cartTextBold">₹3000</span>
+               Free Shipping sitewide |{" "}
+               <span className="cartTextBold">Cash On Delivery</span> available
+               for order: value upto <span className="cartTextBold">₹3000</span>
             </p>
          </div>
          <div className="cartItems">
-            <div className="mappingItems"></div>
+            <div className="mappingItems">
+               {cartItems.map((e, i) => {
+                  return (
+                     <div className="flex cartCard" key={i}>
+                        <div>
+                           <img
+                              className="smallCartImg"
+                              src={e.imageURLcolor1}
+                              alt=""
+                           />
+                        </div>
+                        <div className="smallCartDivRight">
+                           <p className="smallCartTitle">{e.productName}</p>
+                           <p className="smallCartPrice">
+                              Rs. {e.price}.00{" "}
+                              <span className="strPriceCart">
+                                 {" "}
+                                 Rs. {e.strikedPrice}.00
+                              </span>
+                           </p>
+                        </div>
+                        <div className="trashCan">
+                           <FiTrash2 size={18} />
+                        </div>
+                     </div>
+                  );
+               })}
+            </div>
             <div className="btmCartDiv">
                <div className="flex">
                   <p className="shippingText">Shipping:</p>
@@ -23,7 +56,12 @@ const CartPopup = ({ cart, setCart }) => {
                </div>
                <div className="flex">
                   <p className="shippingText">Total:</p>
-                  <p>Rs. 1,099.00</p>
+                  <p>
+                     Rs.{" "}
+                     {cartItems.reduce((sum, item) => {
+                        return sum + item.price;
+                     }, 0)}.00
+                  </p>
                </div>
                <div className="flex">
                   <button className="cartPayBtn">Pay Via UPI/COD</button>

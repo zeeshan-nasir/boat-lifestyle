@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const TrendingEarphones = () => {
+const TrendingEarphones = ({ handleDispatch }) => {
    const [useClass, setUseClass] = useState("first");
    const [data, setData] = useState([]);
 
@@ -58,7 +58,12 @@ const TrendingEarphones = () => {
                               <p className="price">₹ {e.price}</p>
                               <p className="strPrice">₹ {e.strikedPrice}</p>
                            </div>
-                           <button className="cardBtn">ADD +</button>
+                           <button
+                              onClick={() => handleDispatch(e)}
+                              className="cardBtn"
+                           >
+                              ADD +
+                           </button>
                         </div>
                         <ul className="list">
                            <li>Colour variants for every style</li>

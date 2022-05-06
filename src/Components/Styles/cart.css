@@ -1,0 +1,156 @@
+/* Cart popup */
+
+.cart {
+   height: 100vh;
+   width: 450px;
+   position: absolute;
+   right: -34px;
+   z-index: 9999;
+   top: -54px;
+}
+
+.cartHeader {
+   height: 40px;
+   background-color: rgb(221, 0, 0);
+   justify-content: space-between;
+   padding: 0px 20px;
+   font-size: 1.2rem;
+   box-sizing: border-box;
+   line-height: 40px;
+   z-index: 9999;
+}
+
+.cartNav {
+   height: 70px;
+   background-color: rgb(15, 15, 15);
+   padding: 14px 20px;
+   box-sizing: border-box;
+   z-index: 9999;
+}
+
+.cartText {
+   margin: 0px;
+   font-size: .95rem;
+}
+
+.cartTextBold {
+   font-weight: bold;
+}
+
+.cartItems {
+   background-color: white;
+   height: calc(100vh - 110px);
+   color: black;
+}
+
+.mappingItems {
+   height: 526px;
+}
+
+.btmCartDiv {
+   height: 220px;
+   box-shadow: -5px -5px 15px -15px #111;
+   z-index: 1000;
+   background-color: white;
+}
+
+.cartPayBtn {
+   width: 200px;
+   height: 60px;
+   border-radius: 5px;
+   border: none;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   font-size: .9rem;
+}
+
+.cartCardBtn {
+   width: 200px;
+   height: 60px;
+   border-radius: 5px;
+   border: 2px solid red;
+   color: red;
+   font-weight: bold;
+   background-color: white;
+   cursor: pointer;
+   font-size: .9rem;
+}
+
+.btmCartDiv>div {
+   justify-content: space-between;
+   padding: 15px 15px;
+}
+
+.btmCartDiv>div>p {
+   margin: 0px;
+   font-weight: bold;
+   font-size: 1.1rem;
+}
+
+/* Mapped data */
+
+.mappingItems {
+   overflow: scroll;
+   overflow-x: hidden;
+}
+
+.smallCartImg {
+   width: 100px;
+   height: 100px;
+   object-fit: contain;
+}
+
+.cartCard {
+   justify-content: space-between;
+   padding: 10px;
+   border-bottom: 1px solid rgb(182, 182, 182);
+}
+
+.smallCartDivRight {
+   flex: 1;
+   padding-left: 15px;
+   height: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 20px;
+}
+
+.trashCan {
+   padding: 5px;
+}
+
+.smallCartTitle {
+   font-size: 1.1rem;
+   font-weight: bold;
+   margin: 0px;
+}
+
+.smallCartPrice {
+   font-weight: bold;
+   color: red;
+   margin: 0px;
+}
+
+.strPriceCart {
+   font-size: .7rem;
+   color: rgb(155, 155, 155);
+   font-weight: 200;
+   text-decoration: line-through;
+   margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+   height: 2em
+}
+
+::-webkit-scrollbar-track-piece {
+   background: rgb(255, 107, 107)
+}
+
+::-webkit-scrollbar-thumb {
+   background: rgb(255, 0, 0)
+}

@@ -9,7 +9,7 @@
    position: fixed;
    top: 0px;
    width: 100%;
-   z-index: 100;
+   z-index: 10;
 }
 
 .preNavText {
@@ -27,7 +27,7 @@
    position: fixed;
    width: 100%;
    top: 40px;
-   z-index: 100;
+   z-index: 10;
 }
 
 .navLogo {
@@ -43,6 +43,27 @@
    flex: 1;
    justify-content: center;
    cursor: pointer;
+}
+
+.bottomAnimation {
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-size: 1.1rem;
+}
+
+.bottomAnimation::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 1px;
+   background: rgb(255, 255, 255);
+   transition: width .3s;
+}
+
+.bottomAnimation:hover::after {
+   width: 130%;
+   transition: width .3s;
 }
 
 .navSearch {
@@ -128,7 +149,7 @@
       display: flex;
       position: fixed;
       top: 110px;
-      z-index: 100;
+      z-index: 1;
       width: 100%;
    }
 
@@ -155,14 +176,14 @@
       display: flex;
       position: fixed;
       top: 70px;
-      z-index: 100;
+      z-index: 1;
       width: 100%;
    }
 
    .mainNavbar {
       position: fixed;
       top: 0px;
-      z-index: 100;
+      z-index: 10;
       width: 100%;
    }
 
@@ -213,89 +234,47 @@
    border: none;
 }
 
-/* Cart popup */
+/* More popup */
 
-.cart {
-   height: 100vh;
-   width: 450px;
+.morePopup {
+   width: 250px;
+   height: 280px;
+   border: 1px solid rgb(24, 24, 24);
    position: absolute;
-   right: -34px;
-   z-index: 9999;
-   top: -54px;
-}
-
-.cartHeader {
-   height: 40px;
-   background-color: rgb(221, 0, 0);
-   justify-content: space-between;
+   top: 70px;
+   background-color: black;
+   font-size: 1rem;
    padding: 0px 20px;
-   font-size: 1.2rem;
-   box-sizing: border-box;
-   line-height: 40px;
-}
-
-.cartNav {
-   height: 70px;
-   background-color: rgb(15, 15, 15);
-   padding: 14px 20px;
    box-sizing: border-box;
 }
 
-.cartText {
-   margin: 0px;
-   font-size: .95rem;
-}
-
-.cartTextBold {
-   font-weight: bold;
-}
-
-.cartItems {
-   background-color: white;
-   height: calc(100vh - 110px);
-   color: black;
-}
-
-.mappingItems {
-   height: 526px;
-}
-
-.btmCartDiv {
-   height: 220px;
-   box-shadow: -5px -5px 15px -15px #111;
-}
-
-.cartPayBtn {
-   width: 200px;
-   height: 60px;
-   border-radius: 5px;
-   border: none;
-   background-color: red;
-   color: white;
-   font-weight: bold;
-   cursor: pointer;
-   font-size: .9rem;
-}
-
-.cartCardBtn {
-   width: 200px;
-   height: 60px;
-   border-radius: 5px;
-   border: 2px solid red;
+.morePopup>p:hover {
    color: red;
-   font-weight: bold;
-   background-color: white;
-   cursor: pointer;
-   font-size: .9rem;
+   transition: .3s;
 }
 
-.btmCartDiv>div {
-   justify-content: space-between;
-   padding: 15px 15px;
+/* Show popup */
+
+.showPopup {
+   display: grid;
+   width: 100%;
+   height: 500px;
+   background-color: black;
+   border: 1px solid rgb(24, 24, 24);
+   position: absolute;
+   box-sizing: border-box;
+   left: 0px;
+   top: 70px;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+   padding: 40px;
 }
 
-.btmCartDiv>div>p {
-   margin: 0px;
-   font-weight: bold;
-   font-size: 1.1rem;
+.showPopup>img {
+   width: 350px;
+}
+
+.showPopup>img:hover {
+   opacity: .7;
+   transition: .3s;
 }

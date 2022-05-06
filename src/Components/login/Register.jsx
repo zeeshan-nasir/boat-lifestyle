@@ -9,7 +9,7 @@ const Container = styled.div`
     padding-top: 150px;
     border: 0.1px solid black;
     color : white !important;
-    
+    margin-top : 110px;
     input {
         background-color : #141414;
         border-radius : 5px;
@@ -45,6 +45,7 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
+
     .socials > iframe {
         width: 100%;
         max-width: 100%;

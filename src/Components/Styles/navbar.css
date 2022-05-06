@@ -137,7 +137,7 @@
       top: -18px;
    }
 
-   .carousel{
+   .carousel {
       margin-top: 180px;
    }
 }
@@ -166,7 +166,7 @@
       width: 100%;
    }
 
-   .carousel{
+   .carousel {
       margin-top: 140px;
    }
 }
@@ -184,7 +184,7 @@
    width: 210px;
    position: absolute;
    border-radius: 6px;
-   right: 5px;
+   right: -20px;
    top: 55px;
    background-color: black;
    padding: 10px;
@@ -211,4 +211,91 @@
    font-weight: bold;
    cursor: pointer;
    border: none;
+}
+
+/* Cart popup */
+
+.cart {
+   height: 100vh;
+   width: 450px;
+   position: absolute;
+   right: -34px;
+   z-index: 9999;
+   top: -54px;
+}
+
+.cartHeader {
+   height: 40px;
+   background-color: rgb(221, 0, 0);
+   justify-content: space-between;
+   padding: 0px 20px;
+   font-size: 1.2rem;
+   box-sizing: border-box;
+   line-height: 40px;
+}
+
+.cartNav {
+   height: 70px;
+   background-color: rgb(15, 15, 15);
+   padding: 14px 20px;
+   box-sizing: border-box;
+}
+
+.cartText {
+   margin: 0px;
+   font-size: .95rem;
+}
+
+.cartTextBold {
+   font-weight: bold;
+}
+
+.cartItems {
+   background-color: white;
+   height: calc(100vh - 110px);
+   color: black;
+}
+
+.mappingItems {
+   height: 526px;
+}
+
+.btmCartDiv {
+   height: 220px;
+   box-shadow: -5px -5px 15px -15px #111;
+}
+
+.cartPayBtn {
+   width: 200px;
+   height: 60px;
+   border-radius: 5px;
+   border: none;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   font-size: .9rem;
+}
+
+.cartCardBtn {
+   width: 200px;
+   height: 60px;
+   border-radius: 5px;
+   border: 2px solid red;
+   color: red;
+   font-weight: bold;
+   background-color: white;
+   cursor: pointer;
+   font-size: .9rem;
+}
+
+.btmCartDiv>div {
+   justify-content: space-between;
+   padding: 15px 15px;
+}
+
+.btmCartDiv>div>p {
+   margin: 0px;
+   font-weight: bold;
+   font-size: 1.1rem;
 }

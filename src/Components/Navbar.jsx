@@ -9,9 +9,11 @@ import { CgProfile } from "react-icons/cg";
 import "./Styles/navbar.css";
 import { Link } from "react-router-dom";
 import LoginPopup from "./LoginPopup";
+import CartPopup from "./CartPopup";
 
 const Navbar = () => {
    const [login, setLogin] = useState(false);
+   const [cart, setCart] = useState(false);
 
    return (
       <div className="navbar">
@@ -60,8 +62,15 @@ const Navbar = () => {
                      <LoginPopup setLogin={setLogin} login={login} />
                   ) : null}
                   <AiFillGift size={25} />
-                  <AiOutlineShoppingCart className="cartIcon" size={25} />
-                  <p className="cartCount flex">0</p>
+                  <AiOutlineShoppingCart
+                     className="cartIcon"
+                     size={25}
+                     onClick={() => setCart(!cart)}
+                  />
+                  {cart ? <CartPopup cart={cart} setCart={setCart} /> : null}
+                  <p onClick={() => setCart(!cart)} className="cartCount flex">
+                     0
+                  </p>
                </div>
             </div>
          </div>

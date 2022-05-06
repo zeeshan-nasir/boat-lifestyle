@@ -3,9 +3,10 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import {  useState } from "react";
 import React from "react";
 const Container = styled.div`
-    height: 525px;
+    height: 505px;
     background-color: #141414;
-    padding-bottom: 60px;
+    padding-top: 140px;
+    padding-bottom: 30px;
     border: 0.1px solid black;
     color : white !important;
     
@@ -333,7 +334,6 @@ export function Login() {
                 <div className="cont2">
                     <div className="heading">
                         <h2>Login</h2>
-                        <h4 style={{textAlign:"center"}}>Please enter your e-mail and password:</h4>
                     </div>
                     <Form onSubmit={handleSubmit}>
                         <div className="socials">

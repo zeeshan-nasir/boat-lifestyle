@@ -4,9 +4,9 @@ import { useState } from "react";
 import axios from "axios";
 import React from "react";
 const Container = styled.div`
-    height: 705px;
+    height: 625px;
     background-color:   #141414;;
-    padding-bottom: 60px;
+    padding-top: 150px;
     border: 0.1px solid black;
     color : white !important;
     
@@ -193,8 +193,7 @@ export function Register() {
             <div className="cont">
                 <div className="cont2">
                     <div className="heading">
-                        <h2>Register</h2>
-                        <h4 style={{textAlign : "center"}}>Please fill in the fields below:</h4>
+                        <h2>Register User</h2>
                     </div>
                     <Form onSubmit={handleSubmit}>
                     <div className="socials">

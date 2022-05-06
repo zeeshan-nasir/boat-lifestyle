@@ -8,8 +8,9 @@ import { Products } from "./Components/Products/Products";
 import Checkout from "./Components/Payments/Checkout";
 import Payments from "./Components/Payments/Payments";
 import Otp from "./Components/Payments/Otp";
-import  {Login } from "./Components/login/Login";
+import { Login } from "./Components/login/Login";
 import { Register } from "./Components/login/Register";
+
 function App() {
    return (
       <div className="App">
@@ -21,8 +22,8 @@ function App() {
             <Route path="/payments" element={<Payments />}></Route>
             <Route path="/otp" element={<Otp />}></Route>
             <Route path="/products" element={<Products />}></Route>
-            <Route path ="/login" element = {<Login/>} ></Route>
-            <Route path ="/account/register" element = {<Register/>} ></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/account/register" element={<Register />}></Route>
          </Routes>
          <Footer />
       </div>

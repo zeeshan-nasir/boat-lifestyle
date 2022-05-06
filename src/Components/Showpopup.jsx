@@ -1,15 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Showpopup = () => {
+const Showpopup = ({ show, setShow }) => {
+   const navigate = useNavigate();
+
    return (
       <div className="showPopup">
-         <Link to={"/products/wireless_earbuds"}>
-            <img className="firstLinkedImg"
-               src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_480x.png?v=1612338251"
-               alt=""
-            />
-         </Link>
+         <img
+            onClick={() => {
+               setShow(!show);
+               navigate("/products");
+            }}
+            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_480x.png?v=1612338251"
+            alt=""
+         />
          <img
             src="//cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_540x.png?v=1612338387"
             alt=""

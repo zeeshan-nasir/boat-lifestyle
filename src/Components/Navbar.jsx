@@ -47,7 +47,7 @@ const Navbar = () => {
                   >
                      Shop
                   </p>
-                  {show ? <Showpopup /> : null}
+                  {show ? <Showpopup show={show} setShow={setShow} /> : null}
                   <MdKeyboardArrowDown />
                </div>
                <div className="navLinksDiv flex">

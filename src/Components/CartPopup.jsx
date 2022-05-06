@@ -3,6 +3,7 @@ import { ImCross } from "react-icons/im";
 import { useSelector } from "react-redux";
 import { FiTrash2 } from "react-icons/fi";
 import "./Styles/cart.css";
+import { Link } from "react-router-dom";
 
 const CartPopup = ({ cart, setCart }) => {
    const cartItems = useSelector((store) => store.data);
@@ -17,7 +18,7 @@ const CartPopup = ({ cart, setCart }) => {
             <p className="cartText">
                Free Shipping sitewide |{" "}
                <span className="cartTextBold">Cash On Delivery</span> available
-               for order: value upto <span className="cartTextBold">₹3000</span>
+               for order value upto <span className="cartTextBold">₹3000</span>
             </p>
          </div>
          <div className="cartItems">
@@ -60,12 +61,20 @@ const CartPopup = ({ cart, setCart }) => {
                      Rs.{" "}
                      {cartItems.reduce((sum, item) => {
                         return sum + item.price;
-                     }, 0)}.00
+                     }, 0)}
+                     .00
                   </p>
                </div>
                <div className="flex">
                   <button className="cartPayBtn">Pay Via UPI/COD</button>
-                  <button className="cartCardBtn">Pay Via Card</button>
+                  <Link to={"/checkout"}>
+                     <button
+                        onClick={() => setCart(!cart)}
+                        className="cartCardBtn"
+                     >
+                        Pay Via Card
+                     </button>
+                  </Link>
                </div>
             </div>
          </div>

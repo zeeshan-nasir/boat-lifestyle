@@ -10,7 +10,9 @@ const LoginPopup = ({ setLogin, login }) => {
             <ImCross onClick={() => setLogin(!login)} size={13} />
          </div>
          <Link to={"/login"}>
-            <button className="popUpBtn">Login</button>
+            <button onClick={() => setLogin(!login)} className="popUpBtn">
+               Login
+            </button>
          </Link>
       </div>
    );

@@ -278,3 +278,12 @@
    opacity: .7;
    transition: .3s;
 }
+
+.firstLinkedImg:hover {
+   opacity: .7;
+   transition: .3s;
+}
+
+.firstLinkedImg {
+   width: 350px;
+}

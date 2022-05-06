@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Showpopup = () => {
    return (
       <div className="showPopup">
-         <Link to={"/products"}>
+         <Link to={"/products/wireless_earbuds"}>
             <img className="firstLinkedImg"
                src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_480x.png?v=1612338251"
                alt=""

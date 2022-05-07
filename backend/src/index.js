@@ -9,14 +9,14 @@ app.use(cors());
 
 //Custom input validation using express validator
 const { body, validationResult } = require("express-validator");
-validationBodyRules = [
+const validationBodyRules = [
   body("email", "enter a valid email").isEmail(),
   body("password", "password should be atleast 6 characters").isLength({
     min: 6,
   }),
 ];
 
-checkRules = (req, res, next) => {
+const checkRules = (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });

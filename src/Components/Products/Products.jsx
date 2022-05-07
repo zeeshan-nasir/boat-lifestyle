@@ -6,12 +6,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../Redux/Products/action";
 import { sortProducts } from "../../Redux/Products/action";
 import { addToCart } from "../../Redux/AddToCart/actions";
+import { useNavigate } from "react-router";
 
 export const Products = () => {
     let {id} = useParams();
     const dispatch = useDispatch();
     const products = useSelector((store) => store.products.products)
     const [index, setIndex] = useState();
+    const navigate = useNavigate();
     
     if(id === undefined) {
         id = "/"
@@ -44,7 +46,7 @@ export const Products = () => {
 
         getData()
 
-    }, []);
+    }, [id]);
 
     const getData = () => {
         fetch(`http://localhost:5000/products/${id}`)
@@ -66,6 +68,9 @@ export const Products = () => {
         dispatch(addToCart(ele))
     } 
 
+    const navigateToDetails = () =>{
+        navigate("/products/detail")
+    }
 
     return (
         <div className="ga_Products">
@@ -99,20 +104,23 @@ export const Products = () => {
 
             <div className="ga_products_container">
                 {products.map((ele, ind) => {
-                    // {imageSetter(ele.img)}
                     return (
                         <div key={ind} className="ga_productCard">
                             <img onMouseOver={() => {
                                 setIndex(ind)
                             }} onMouseOut={() => {
                                 setIndex(-1);
-                            }} src={ind == index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="Sorry unable to picture" />
+                            }} src={ind == index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="Sorry unable to picture" onClick={() => {
+                                navigateToDetails()
+                            }}/>
                             <div className="ga_productInfo">
                                 <div className="ga_rating">
                                     <FontAwesomeIcon className="ga_star" icon={faStar} />
                                     <h5>{ele.Rating} ({ele.RatingCount})</h5>
                                 </div>
-                                <h4>{ele.productName}</h4>
+                                <h4 onClick={() => {
+                                    navigateToDetails();
+                                }}>{ele.productName}</h4>
                                 <div className="ga_price">
                                     <div>
                                         <h4>₹ {ele.price}</h4>

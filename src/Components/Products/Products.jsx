@@ -110,7 +110,7 @@ export const Products = () => {
                                 setIndex(ind)
                             }} onMouseOut={() => {
                                 setIndex(-1);
-                            }} src={ind == index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="Sorry unable to picture" onClick={() => {
+                            }} src={ind == index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="Sorry unable to load picture" onClick={() => {
                                 navigateToDetails()
                             }}/>
                             <div className="ga_productInfo">

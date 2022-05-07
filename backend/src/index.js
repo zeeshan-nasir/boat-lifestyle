@@ -48,7 +48,7 @@ app.get(
   }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("/users");
+    res.redirect("/");
   }
 );
 

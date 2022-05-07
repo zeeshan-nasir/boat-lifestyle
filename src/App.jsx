@@ -23,6 +23,7 @@ function App() {
             <Route path="/otp" element={<Otp />}></Route>
             <Route path="/products" element={<Products />}></Route>
             <Route path="/products/:id" element={<Products />}></Route>
+            <Route path="/products/detail" element={<ProductDetails />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/account/register" element={<Register />}></Route>
          </Routes>

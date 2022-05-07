@@ -5,6 +5,7 @@ import {useParams} from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../Redux/Products/action";
 import { sortProducts } from "../../Redux/Products/action";
+import { addToCart } from "../../Redux/AddToCart/actions";
 
 export const Products = () => {
     let {id} = useParams();
@@ -52,6 +53,18 @@ export const Products = () => {
             dispatch(getProducts(data.products))
         })
     }
+
+    const dataToCart = (ele) => {
+        const cart = JSON.parse(localStorage.getItem("cartBoat")) || [];
+
+        cart.push(ele);
+
+        localStorage.setItem("cartBoat", JSON.stringify(cart))
+
+        alert(`- ${ele.productName} - added to your Cart`)
+
+        dispatch(addToCart(ele))
+    } 
 
 
     return (
@@ -105,7 +118,9 @@ export const Products = () => {
                                         <h4>₹ {ele.price}</h4>
                                     <h6>₹ {ele.strikedPrice}</h6>
                                     </div>
-                                    <button>Add +</button>
+                                    <button onClick={() => {
+                                        dataToCart(ele)
+                                    }}>Add +</button>
                                 </div>
 
                                 <h5>2 colors available</h5>

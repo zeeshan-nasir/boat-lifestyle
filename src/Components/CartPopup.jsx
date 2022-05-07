@@ -6,7 +6,7 @@ import "./Styles/cart.css";
 import { Link } from "react-router-dom";
 
 const CartPopup = ({ cart, setCart }) => {
-   const cartItems = useSelector((store) => store.data);
+   const cartItems = useSelector((store) => store.cart.data);
 
    return (
       <div className="cart">

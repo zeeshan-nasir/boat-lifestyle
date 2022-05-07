@@ -130,6 +130,18 @@
     color: red;
     font-size: smaller;
 }
+.ga_discount {
+    position: absolute;
+    font-size: small;
+    width: 100px;
+    height: 10px;
+    color: red;
+    background-color: none;
+    text-align:center;
+    border-radius: 0;
+    transform: skew(-20deg, 0);
+    border: 1px solid red;
+}
 
 
 @media only screen and (max-width: 1000px) {

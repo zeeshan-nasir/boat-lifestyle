@@ -2,11 +2,15 @@ import { useEffect, useState} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSliders, faStar } from "@fortawesome/free-solid-svg-icons";
 import {useParams} from "react-router-dom"
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../Redux/Products/action";
+import { sortProducts } from "../../Redux/Products/action";
 
 export const Products = () => {
-    const [products, setProducts] = useState([]);
-    const [img, setImage] = useState();
     let {id} = useParams();
+    const dispatch = useDispatch();
+    const products = useSelector((store) => store.products.products)
+    const [index, setIndex] = useState();
     
     if(id === undefined) {
         id = "/"
@@ -45,21 +49,10 @@ export const Products = () => {
         fetch(`http://localhost:5000/products/${id}`)
         .then((res) => res.json())
         .then(data => {
-            setProducts(data.products)
+            dispatch(getProducts(data.products))
         })
-
-        // if(products) {
-        //     return function cleanup () {
-        //     console.log("Hello")
-        // }
-        // }
     }
 
-    // const imageSetter =(img) =>{
-    //     setImage(img)
-    // }
-
-    // console.log(products)
 
     return (
         <div className="ga_Products">
@@ -79,12 +72,14 @@ export const Products = () => {
 
                 <div className="ga_sortDiv">
                     <h3>Sort by</h3>
-                    <select id="ga_sort">
+                    <select onChange={(ele) => {
+                        dispatch(sortProducts(ele.target.value))
+                    }} id="ga_sort">
                         <option className="opt" value="featured">Featured</option>
-                        <option className="opt" value="lowToHigh">Price, Low to High</option>
-                        <option className="opt" value="highToLow">Price, High to Low</option>
-                        <option className="opt" value="A-Z">Alphabetically, A-Z</option>
-                        <option  className="opt" value="Z-A">Alphabetically, Z-A</option>
+                        <option className="opt" value="price">Price, Low to High</option>
+                        <option className="opt" value="price">Price, High to Low</option>
+                        <option className="opt" value="productName">Alphabetically, A-Z</option>
+                        <option  className="opt" value="productName">Alphabetically, Z-A</option>
                     </select>
                 </div>
             </div>
@@ -94,7 +89,11 @@ export const Products = () => {
                     // {imageSetter(ele.img)}
                     return (
                         <div key={ind} className="ga_productCard">
-                            <img  src={ele.imageURLcolor1} alt="Sorry unable to picture" />
+                            <img onMouseOver={() => {
+                                setIndex(ind)
+                            }} onMouseOut={() => {
+                                setIndex(-1);
+                            }} src={ind == index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="Sorry unable to picture" />
                             <div className="ga_productInfo">
                                 <div className="ga_rating">
                                     <FontAwesomeIcon className="ga_star" icon={faStar} />

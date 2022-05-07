@@ -20,7 +20,7 @@ const Navbar = () => {
    const [more, setMore] = useState(false);
    const [show, setShow] = useState(false);
 
-   let cartLen = useSelector((store) => store.data);
+   let cartLen = useSelector((store) => store.cart.data);
 
    return (
       <div className="navbar">
@@ -88,7 +88,7 @@ const Navbar = () => {
                   />
                   {cart ? <CartPopup cart={cart} setCart={setCart} /> : null}
                   <p onClick={() => setCart(!cart)} className="cartCount flex">
-                     {cartLen.length}
+                     {/* {cartLen.length} */}
                   </p>
                </div>
             </div>

@@ -74,10 +74,10 @@ export const Products = () => {
 
     return (
         <div className="ga_Products">
-            <img className="ga_topImage" src={id == "/" ? "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz-_Catgry_web_d201c6e3-e067-4280-a127-56a2e1b51399.jpg?v=1634806683": imgURL[id]} alt="" />
+            <img className="ga_topImage" src={id === "/" ? "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz-_Catgry_web_d201c6e3-e067-4280-a127-56a2e1b51399.jpg?v=1634806683": imgURL[id]} alt="" />
 
             <div className="ga_main">
-                <h1 className="ga_heading">{id == "/" ? "All Products": headings[id]}</h1>
+                <h1 className="ga_heading">{id === "/" ? "All Products": headings[id]}</h1>
 
             <div className="ga_filterAndSort">
                 <div>
@@ -110,7 +110,7 @@ export const Products = () => {
                                 setIndex(ind)
                             }} onMouseOut={() => {
                                 setIndex(-1);
-                            }} src={ind == index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="Sorry unable to load picture" onClick={() => {
+                            }} src={ind === index ? ele.imageURLcolor2 : ele.imageURLcolor1} alt="" onClick={() => {
                                 navigateToDetails()
                             }}/>
                             <div className="ga_productInfo">

@@ -2,7 +2,7 @@
 
 .cart {
    height: 100vh;
-   width: 450px;
+   width: 410px;
    position: absolute;
    right: -34px;
    z-index: 9999;
@@ -44,7 +44,7 @@
 }
 
 .mappingItems {
-   height: 526px;
+   height: 410px;
 }
 
 .btmCartDiv {
@@ -55,7 +55,7 @@
 }
 
 .cartPayBtn {
-   width: 200px;
+   width: 180px;
    height: 60px;
    border-radius: 5px;
    border: none;
@@ -67,7 +67,7 @@
 }
 
 .cartCardBtn {
-   width: 200px;
+   width: 180px;
    height: 60px;
    border-radius: 5px;
    border: 2px solid red;

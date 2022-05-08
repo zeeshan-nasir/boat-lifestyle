@@ -11,11 +11,13 @@ import Otp from "./Components/Payments/Otp";
 import { Login } from "./Components/login/Login";
 import { Register } from "./Components/login/Register";
 import { ProductDetails } from "./Components/Productdescription/productdetails";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
    return (
       <div className="App">
          <Navbar />
+         <ScrollToTop />
          <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/checkout" element={<Checkout />}></Route>

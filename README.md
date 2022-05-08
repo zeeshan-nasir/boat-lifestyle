@@ -1,113 +1,55 @@
-# Backend Routes
+• A cloned website of boat-lifestyle.com, that is a consumer electronics brand in India. <br>
+• Group project developed in 5 days by 5 members.
+<br>
+<br>
+<h1>Areas of responsibility:</h1><br>
+• Built a fully responsive homepage and cart page <br>
+• Built a fully responsive navbar and footer for the website. <br>
+• Used redux to add items to cart. <br>
+• Built the checkout, payments and otp page.
+<br>
+<br>
+<h1>Tech Stack:</h1> <br>
+• React <br>
+• Node.js <br>
+• Express <br>
+• MongoDB <br>
+• HTML <br>
+• CSS <br>
 
-```
-POST - http://localhost:5000/login   -  MANUAL LOGIN 
-    {
-      "email" : "",
-      "password : "",
-    }
+<h1>Home Page</h1>
 
-POST - http://localhost:5000/register - MANUAL SIGNUP
-     {
-      "email" : "",
-      "password : "",
-    }
+<br>
 
-GET - http://localhost:5000/auth/google     - GOOGLE OAUTH
+<img src="https://user-images.githubusercontent.com/93468404/167298792-608ffa07-4eaa-4402-a806-ca3ae2c9789b.png">
+<br>
 
-GET - http://localhost:5000/auth/facebook    - FACEBOOK OAUTH  (some issues still)
+<h1>Products Page</h1>
 
-GET - http://localhost:5000/products  - ALL PRODUCTS
+<br>
 
-GET - http://localhost:5000/products/smart_watches    - SMART WATCHES
+<img src="https://user-images.githubusercontent.com/93468404/167298802-42fe243a-5547-4db5-b611-6f12c0953c12.png">
+<br>
 
-GET - http://localhost:5000/products/wireless_earbuds  - WIRELESS EARBUDS
+<h1>Product Details Page</h1>
 
-GET - http://localhost:5000/products/wireless_speakers    - WIRELESS SPEAKERS
+<br>
 
-GET - http://localhost:5000/products/home_theatre    - HOME THEATRE SYSTEMS
+<img src="https://user-images.githubusercontent.com/93468404/167298864-0d92138b-427d-4a68-bb35-3fca73dc62c7.png">
+<br>
 
-GET - http://localhost:5000/products/wired_earphones   - WIRED EARPHONES
+<h1>Cart Page</h1>
 
-GET - http://localhost:5000/products/mobile_accessories  - MOBILE ACCESSORIES
+<br>
 
-GET - http://localhost:5000/products/limited_edition   - LIMITED EDITION PRODUCTS
+<img src="https://user-images.githubusercontent.com/93468404/167298893-db93fde3-e039-4f47-92d6-ab992e362dc7.png">
+<br>
 
-GET - http://localhost:5000/products/grooming        - SELF GROOMING PRODUCTS
+<h1>Login Page</h1>
 
+<br>
 
-```
+<img src="https://user-images.githubusercontent.com/93468404/167298926-93a81b61-0ac8-44f6-8f70-af3dac586a89.png">
+<br>
+<br>
 
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -26,7 +26,7 @@
 }
 
 .cartNav {
-   height: 71px;
+   height: 70px;
    background-color: rgb(15, 15, 15);
    padding: 14px 20px;
    box-sizing: border-box;
@@ -94,7 +94,7 @@
 .mappingItems {
    overflow: scroll;
    overflow-x: hidden;
-   height: 69.7%;
+   height: 70%;
    color: black;
 }
 

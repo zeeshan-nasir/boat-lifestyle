@@ -1,4 +1,4 @@
-• A cloned website of boat-lifestyle.com, that is a consumer electronics brand in India. <br>
+• A cloned website of boat-lifestyle.com, which is a consumer electronics brand in India. <br>
 • Group project developed in 5 days by 5 members.
 <br>
 <br>

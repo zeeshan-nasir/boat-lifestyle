@@ -3,7 +3,7 @@
 <br>
 <br>
 <h1>Areas of responsibility:</h1><br>
-• Built a fully responsive homepage and cart page <br>
+• Built a fully responsive homepage and cart page. <br>
 • Built a fully responsive navbar and footer for the website. <br>
 • Used redux to add items to cart. <br>
 • Built the checkout, payments and otp page.

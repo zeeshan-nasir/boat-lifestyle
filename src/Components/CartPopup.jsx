@@ -78,7 +78,14 @@ const CartPopup = ({ cart, setCart }) => {
                   </p>
                </div>
                <div className="flex">
-                  <button className="cartPayBtn">Pay Via UPI/COD</button>
+                  <Link to={"/checkout"}>
+                     <button
+                        onClick={() => setCart(!cart)}
+                        className="cartPayBtn"
+                     >
+                        Pay Via UPI/COD
+                     </button>
+                  </Link>
                   <Link to={"/checkout"}>
                      <button
                         onClick={() => setCart(!cart)}

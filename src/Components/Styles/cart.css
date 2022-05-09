@@ -44,11 +44,11 @@
 }
 
 .mappingItems {
-   height: 473px;
+   height: 483px;
 }
 
 .btmCartDiv {
-   height: 160px;
+   height: 150px;
    box-shadow: -5px -5px 15px -15px #111;
    z-index: 1000;
    background-color: white;

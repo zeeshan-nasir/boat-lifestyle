@@ -8,27 +8,17 @@ const Payments = () => {
             <div className="checkoutHeadDiv">
                <h2 className="checkoutHead">Payment Details</h2>
             </div>
-            <div className="formDataDiv flex">
-               <label htmlFor="">Card Name</label>
-               <input type="text" name="" id="" />
-            </div>
-            <div className="formDataDiv flex">
-               <label htmlFor="">Card Number</label>
-               <input type="number" name="" id="" />
-            </div>
-            <div className="formDataDiv flex">
-               <label htmlFor="">CVV</label>
-               <input type="number" name="" id="" />
-            </div>
-            <div className="formDataDiv flex">
-               <label htmlFor="">Expiry date</label>
-               <input type="date" name="" id="" />
-            </div>
-            <div className="checkoutHeadDiv">
-               <Link to={"/otp"}>
-                  <button className="checkoutBtn">Submit</button>
-               </Link>
-            </div>
+            <label htmlFor="">Card Name</label>
+            <input type="text" name="" id="" />
+            <label htmlFor="">Card Number</label>
+            <input type="number" name="" id="" />
+            <label htmlFor="">CVV</label>
+            <input type="number" name="" id="" />
+            <label htmlFor="">Expiry date</label>
+            <input type="date" name="" id="" />
+            <Link to={"/otp"}>
+               <button className="checkoutBtn">Submit</button>
+            </Link>
          </div>
       </div>
    );

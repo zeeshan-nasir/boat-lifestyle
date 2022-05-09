@@ -10,16 +10,10 @@ const Otp = () => {
             <div className="checkoutHeadDiv">
                <h2 className="checkoutHead">Enter OTP</h2>
             </div>
-            <div className="formDataDiv flex">
-               <label htmlFor="">OTP</label>
-               <input type="text" name="" id="" />
-            </div>
-
-            <div className="checkoutHeadDiv">
-               <button onClick={() => navigate("/")} className="checkoutBtn">
-                  Submit
-               </button>
-            </div>
+            <input type="text" name="" id="" />
+            <button onClick={() => navigate("/")} className="checkoutBtn">
+               Submit
+            </button>
          </div>
       </div>
    );

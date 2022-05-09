@@ -44,19 +44,19 @@
 }
 
 .mappingItems {
-   height: 410px;
+   height: 473px;
 }
 
 .btmCartDiv {
-   height: 220px;
+   height: 160px;
    box-shadow: -5px -5px 15px -15px #111;
    z-index: 1000;
    background-color: white;
 }
 
 .cartPayBtn {
-   width: 180px;
-   height: 60px;
+   width: 170px;
+   height: 50px;
    border-radius: 5px;
    border: none;
    background-color: red;
@@ -67,8 +67,8 @@
 }
 
 .cartCardBtn {
-   width: 180px;
-   height: 60px;
+   width: 170px;
+   height: 50px;
    border-radius: 5px;
    border: 2px solid red;
    color: red;
@@ -80,7 +80,7 @@
 
 .btmCartDiv>div {
    justify-content: space-between;
-   padding: 15px 15px;
+   padding: 10px 15px;
 }
 
 .btmCartDiv>div>p {

@@ -1,12 +1,19 @@
 import React from "react";
 import { ImCross } from "react-icons/im";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { FiTrash2 } from "react-icons/fi";
 import "./Styles/cart.css";
 import { Link } from "react-router-dom";
+import { delFromCart } from "../Redux/AddToCart/actions";
 
 const CartPopup = ({ cart, setCart }) => {
    const cartItems = useSelector((store) => store.cart.data);
+   console.log(cartItems);
+   const dispatch = useDispatch();
+
+   const handleDelete = (id) => {
+      dispatch(delFromCart({ id: id }));
+   };
 
    return (
       <div className="cart">
@@ -43,7 +50,12 @@ const CartPopup = ({ cart, setCart }) => {
                               </span>
                            </p>
                         </div>
-                        <div className="trashCan">
+                        <div
+                           onClick={() => {
+                              handleDelete(e._id);
+                           }}
+                           className="trashCan"
+                        >
                            <FiTrash2 size={18} />
                         </div>
                      </div>

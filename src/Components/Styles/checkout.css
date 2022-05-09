@@ -37,6 +37,8 @@
 }
 
 .checkoutDiv>input {
+   width: 250px;
+   margin: auto;
    height: 25px;
    border-radius: 5px;
    border: 1px solid;
@@ -84,7 +86,14 @@
 }
 
 .checkoutDivOtp>input {
+   width: 250px;
    height: 25px;
    border-radius: 5px;
    border: 1px solid;
+}
+
+@media only screen and (max-width: 720px){
+   .checkoutBtn{
+      margin-bottom: 20px;
+   }
 }

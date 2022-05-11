@@ -190,6 +190,8 @@
    .carousel {
       margin-top: 140px;
    }
+
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -203,12 +205,20 @@
 .loginPopup {
    height: 70px;
    width: 210px;
-   position: absolute;
+   position: fixed;
    border-radius: 6px;
-   right: -20px;
-   top: 55px;
+   right: 20px;
+   top: 110px;
    background-color: black;
    padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+   .loginPopup {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+   }
 }
 
 .popupUpperDiv {

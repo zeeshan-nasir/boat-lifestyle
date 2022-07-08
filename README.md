@@ -12,7 +12,7 @@
 <h1>Tech Stack:</h1> <br>
 • React <br>
 • Node.js <br>
-• Express <br>
+• Express.js <br>
 • MongoDB <br>
 • HTML <br>
 • CSS <br>
